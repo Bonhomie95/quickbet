@@ -16,7 +16,7 @@ const Header = () => {
       <div className="bg-white hidden md:flex items-center justify-between p-4">
         <div className="flex list-none items-center justify-center lg:gap-4 md:gap-2">
           {headerLinks.map((header) => (
-            <Link to={`/${header.id}`} onClick={() => addActive(header.id)}>
+            <Link key={header.id} to={`/${header.id}`} onClick={() => addActive(header.id)}>
               {' '}
               <li
                 key={header.id}

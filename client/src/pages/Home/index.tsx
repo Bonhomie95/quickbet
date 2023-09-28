@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div>
       <Header />
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-start justify-between p-4">
         <Leftsidebar />
         <Main />
         <Rightsidebar />
