@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div>
       <Header />
-      <div className="flex items-start justify-between p-4">
+      <div className="flex md:items-start items-center justify-between gap-4 p-2">
         <Leftsidebar />
         <Main />
         <Rightsidebar />

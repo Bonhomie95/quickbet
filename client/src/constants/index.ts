@@ -1,3 +1,6 @@
+import winnersbetLogo from '/winnersbet.png';
+import slide from '/slide1.png';
+
 export const navLinks = [
   {
     id: '/',
@@ -112,5 +115,59 @@ export const sports = [
   {
     id: 'cycling',
     title: 'Cycling',
+  },
+];
+
+export const AllWinners = [
+  {
+    id: '1',
+    type: 'Jackpot',
+    time: '2mins ago',
+    user: 'user 34218',
+    amount: 'NGN 969,200.00',
+  },
+  {
+    id: '2',
+    type: 'Jackpot',
+    time: '4mins ago',
+    user: 'user 34218',
+    amount: 'NGN 400,200.00',
+  },
+  {
+    id: '3',
+    type: 'Jackpot',
+    time: '5mins ago',
+    user: 'user 34218',
+    amount: 'NGN 350,200.00',
+  },
+];
+
+export const MainBodySlider = [
+  {
+    id: 'slide1',
+    h3: 'Bet Small Win High',
+    h1: 'Everyone wins at QUICKBET',
+    button: 'Bet now',
+    buttonLink: '/bet-now',
+    image: `${slide}`,
+    logo: `${winnersbetLogo}`,
+  },
+  {
+    id: 'slide1',
+    h3: 'Second bet',
+    h1: 'Everyone wins at QUICKBET',
+    button: 'Bet now',
+    buttonLink: '/bet-now',
+    image:  `${slide}` ,
+    logo: `${winnersbetLogo}`,
+  },
+  {
+    id: 'slide1',
+    h3: 'third bet',
+    h1: 'Everyone wins at QUICKBET',
+    button: 'Bet now',
+    buttonLink: '/bet-now',
+    image: `${slide}`,
+    logo: `${winnersbetLogo}`,
   },
 ];
