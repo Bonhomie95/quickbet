@@ -6,7 +6,6 @@ import { Pagination, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import { Link } from 'react-router-dom';
 
 const MainBody = () => {
@@ -21,7 +20,6 @@ const MainBody = () => {
           disableOnInteraction: true,
         }}
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         className="w-full items-center bg-[#60457ECC]"
       >
         {MainBodySlider.map((mainbody, index) => (
