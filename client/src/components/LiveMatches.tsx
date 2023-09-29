@@ -57,14 +57,14 @@ const LiveMatches = () => {
       <div className="md:hidden flex">
         <Swiper
           modules={[Pagination, A11y, Autoplay]}
-          slidesPerView={2}
+          slidesPerView={5}
           loop={true}
           className="flex gap-3 items-start justify-center bg-white text-left w-full mt-0.5"
         >
           {sports.map((sport) => (
             <SwiperSlide
               key={sport.id}
-              className={`text-[#222] text-center text-sm whitespace-nowrap px-1 md:px-2 py-2
+              className={`text-[#222] text-center text-[7px] whitespace-nowrap px-1 md:px-2 py-2
               ${
                 active === null && sport.id === 'football'
                   ? 'bg-[#B99DDD] text-white'

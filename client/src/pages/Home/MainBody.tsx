@@ -1,4 +1,4 @@
-import { LiveMatches, UpcomingMatches } from '../../components';
+import { LiveMatches, UpcomingMatches, MobileHeader } from '../../components';
 import { MainBodySlider } from '../../constants';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, A11y, Autoplay } from 'swiper/modules';
@@ -58,6 +58,7 @@ const MainBody = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <MobileHeader />
       <LiveMatches />
       <UpcomingMatches />
     </div>
