@@ -1,5 +1,6 @@
 import winnersbetLogo from '/winnersbet.png';
 import slide from '/slide1.png';
+import mobileslide from '/mobileslide1.png';
 
 export const navLinks = [
   {
@@ -167,7 +168,7 @@ export const MainBodySlider = [
     h1: 'Everyone wins at QUICKBET',
     button: 'Bet now',
     buttonLink: '/bet-now',
-    image: `${slide}`,
+    image: `${mobileslide}`,
     logo: `${winnersbetLogo}`,
   },
 ];

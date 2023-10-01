@@ -26,10 +26,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`list-none py-[12px] lg:px-[45px] md:px-[25px] rounded-full cursor-pointer
-              ${active=== null && nav.id==='/' ? 'bg-[#7853A7]' : ''}
-              ${
-                nav.id === active ? 'bg-[#7853A7]' : 'bg-[#694498]'
-              }`}
+              ${active === null && nav.id === '/' ? 'bg-[#7853A7]' : ''}
+              ${nav.id === active ? 'bg-[#7853A7]' : 'bg-[#694498]'}`}
               onClick={() => addActive(nav.id)}
             >
               <Link to={nav.id}> {nav.title} </Link>

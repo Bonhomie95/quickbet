@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const MainBody = () => {
   return (
-    <div className="md:w-1/2 w-full flex flex-col items-center justify-center gap-4">
+    <div className="lg:w-1/2 w-full flex flex-col items-center justify-center gap-4">
       <Swiper
         modules={[Pagination, A11y, Autoplay]}
         slidesPerView={1}
@@ -25,7 +25,7 @@ const MainBody = () => {
         {MainBodySlider.map((mainbody, index) => (
           <SwiperSlide
             key={index}
-            className="flex items-start justify-between swiper-slide md:px-5 px-2 md:gap-5 gap-2"
+            className="flex flex-row items-center justify-between swiper-slide md:px-5 px-2 md:gap-5 gap-2"
           >
             <div className="flex flex-col items-center justify-center md:gap-10 gap-5 py-5">
               <img src={mainbody.logo} alt="Logo" />
@@ -41,18 +41,18 @@ const MainBody = () => {
 
                 <Link
                   to={mainbody.buttonLink}
-                  className="text-white bg-[#735797] hover:bg-[#674d86] w-full py-2 md:px-5 px-3 rounded-full "
+                  className="text-white bg-[#735797] hover:bg-[#674d86] w-3/4 lg:w-full py-2 md:px-5 px-3 rounded-full "
                 >
                   {' '}
                   {mainbody.button}{' '}
                 </Link>
               </div>
             </div>
-            <div className="w-full h-full">
+            <div className="w-full h-full inline-block">
               <img
                 src={mainbody.image}
                 alt="Slider Image"
-                className="w-full h-full object-cover"
+                className="w-full object-contain"
               />
             </div>
           </SwiperSlide>

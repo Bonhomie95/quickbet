@@ -1,4 +1,4 @@
-import {Header} from '../../components';
+import { Header } from '../../components';
 import Leftsidebar from './Leftsidebar';
 import Main from './MainBody';
 import Rightsidebar from './Rightsidebar';

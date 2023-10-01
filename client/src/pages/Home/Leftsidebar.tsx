@@ -11,7 +11,7 @@ const Leftsidebar = () => {
     setActive(index);
   };
   return (
-    <div className="hidden md:flex flex-col items-left justify-left gap-2 w-2/5">
+    <div className="hidden lg:flex flex-col items-left justify-left gap-2 w-2/5">
       <div className="w-full lg:h-52 md:h-48 rounded-md">
         <img src={image100} className="h-full w-full object-cover" />
       </div>
@@ -30,8 +30,13 @@ const Leftsidebar = () => {
             <li
               key={sport.id}
               className={`px-12 text-[#222]
-              ${active === null && sport.id === 'football' ? 'opacity-100' :
-              sport.id === active ? 'opacity-100': 'opacity-40'}`}
+              ${
+                active === null && sport.id === 'football'
+                  ? 'opacity-100'
+                  : sport.id === active
+                  ? 'opacity-100'
+                  : 'opacity-40'
+              }`}
             >
               <Link
                 key={sport.id}

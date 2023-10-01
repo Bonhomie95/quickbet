@@ -9,6 +9,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const date = new Date();
+const options = { 
+  hour: '2-digit', 
+  minute: '2-digit', 
+  second: '2-digit', 
+  timeZoneName: 'short' 
+};
+
+const formattedDate = date.toLocaleString('en-US', options);
 
 const LiveMatches = () => {
   const [active, setActive] = useState<string | null>(null);
@@ -20,7 +28,8 @@ const LiveMatches = () => {
     <div className="flex flex-col w-full bg-white shadow-md">
       <div className="flex items-center justify-between w-full rounded-md bg-[#735797] text-white md:px-8 px-4 md:py-2 py-1">
         <span>Live'</span>
-        <span> {`${date.getHours()}:${date.getMinutes()}`} </span>
+        {/* <span> {`${date.getHours()}:${date.curr()}`} </span> */}
+        <span> {formattedDate} </span>
       </div>
       <div className="md:flex hidden">
         <Swiper

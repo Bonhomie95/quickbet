@@ -15,6 +15,7 @@
   border: none;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  white-space: nowrap;
 }
 
 html {
@@ -34,6 +35,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #5d388c;
 }
-body{
-  background-color: #F8F8F8;
+body {
+  background-color: #f8f8f8;
 }
