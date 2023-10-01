@@ -1,8 +1,5 @@
-
 const UpcomingMatches = () => {
-  return (
-    <div>UpcomingMatches</div>
-  )
-}
+  return <div>UpcomingMatches</div>;
+};
 
-export default UpcomingMatches
+export default UpcomingMatches;
