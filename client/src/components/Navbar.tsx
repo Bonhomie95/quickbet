@@ -19,13 +19,13 @@ const Navbar = () => {
           <div className="w-[50px] h-[40px]">
             <img src={logo} className="w-full h-full object-cover" />
           </div>
-          <span className="font-extrabold md:flex hidden"> QUICKBET </span>
+          <span className="font-extrabold lg:flex hidden"> QUICKBET </span>
         </Link>
         <div className="md:flex hidden items-center justify-center lg:gap-5 md:gap-2 rounded-3xl bg-[#694498] ">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`list-none py-[12px] lg:px-[45px] md:px-[25px] rounded-full cursor-pointer
+              className={`list-none py-[12px] lg:px-[45px] md:px-[20px] rounded-full cursor-pointer
               ${active === null && nav.id === '/' ? 'bg-[#7853A7]' : ''}
               ${nav.id === active ? 'bg-[#7853A7]' : 'bg-[#694498]'}`}
               onClick={() => addActive(nav.id)}
@@ -36,15 +36,15 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden items-center justify-between gap-1">
           <Link to="/login">
-            <div className="bg-[#7853A7] hover:bg-transparent px-6 py-2 rounded-md mr-1">
+            <div className="bg-[#7853A7] hover:bg-transparent lg:px-6 px-4 py-2 rounded-md mr- 1 uppercase">
               {' '}
-              lOGIN{' '}
+              login{' '}
             </div>{' '}
           </Link>
-          <span className="w-[1px] h-[32px] bg-white opacity-70"></span>
+          <span className="w-[1px] h-[32px] bg-white opacity-70 ml-2"></span>
           <Link to="/register">
             {' '}
-            <div className="p-1 hover:bg-[#7853A7] px-6 py-2 rounded-md mr-1">
+            <div className="p-1 hover:bg-[#7853A7] lg:px-6 px-4 py-2 rounded-md mr-1">
               {' '}
               REGISTER{' '}
             </div>

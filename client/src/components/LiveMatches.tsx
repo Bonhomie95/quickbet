@@ -7,6 +7,7 @@ import { Pagination, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Matches from './Matches';
 
 const date = new Date();
 const options = { 
@@ -95,6 +96,7 @@ const LiveMatches = () => {
           ))}
         </Swiper>
       </div>
+      <Matches />
     </div>
   );
 };

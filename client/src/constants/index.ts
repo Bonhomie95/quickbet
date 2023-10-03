@@ -1,6 +1,8 @@
 import winnersbetLogo from '/winnersbet.png';
 import slide from '/slide1.png';
 import mobileslide from '/mobileslide1.png';
+import ast from '/ast.png';
+import lee from '/lee.png';
 
 export const navLinks = [
   {
@@ -159,7 +161,7 @@ export const MainBodySlider = [
     h1: 'Everyone wins at QUICKBET',
     button: 'Bet now',
     buttonLink: '/bet-now',
-    image:  `${slide}` ,
+    image: `${slide}`,
     logo: `${winnersbetLogo}`,
   },
   {
@@ -170,5 +172,68 @@ export const MainBodySlider = [
     buttonLink: '/bet-now',
     image: `${mobileslide}`,
     logo: `${winnersbetLogo}`,
+  },
+];
+
+export const LiveMatches = [
+  {
+    id: '1',
+    logo1: `${ast}`,
+    team1: 'Ast',
+    logo2: `${lee}`,
+    team2: 'Lee',
+    score: '0-0',
+    win1: '1.42',
+    draw: '3.01',
+    win2: '4.80',
+    time: '68'
+  },
+  {
+    id: '1',
+    logo1: `${ast}`,
+    team1: 'Ast',
+    logo2: `${lee}`,
+    team2: 'Lee',
+    score: '0-0',
+    win1: '1.42',
+    draw: '3.01',
+    win2: '4.80',
+    time: '68'
+  },
+  {
+    id: '1',
+    logo1: `${ast}`,
+    team1: 'Ast',
+    logo2: `${lee}`,
+    team2: 'Lee',
+    score: '0-0',
+    win1: '1.42',
+    draw: '3.01',
+    win2: '4.80',
+    time: '68'
+  },
+  {
+    id: '1',
+    logo1: `${ast}`,
+    team1: 'Ast',
+    logo2: `${lee}`,
+    team2: 'Lee',
+    score: '0-0',
+    win1: '1.42',
+    draw: '3.01',
+    win2: '4.80',
+    time: '68'
+  },
+  {
+    id: '1',
+    logo1: `${ast}`,
+    team1: 'Ast',
+    logo2: `${lee}`,
+    team2: 'Lee',
+    score: '0-0',
+    win1: '1.42',
+    draw: '3.01',
+    win2: '4.80',
+    time: '68'
   },
 ];
